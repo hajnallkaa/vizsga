@@ -1,0 +1,146 @@
+$backgroundColor: #22b573ff;
+$cardColorOne: #1c1717ff;
+$cardColorTwo: #f2f2f2ff;
+$yellowText: #e6a947ff;
+$whiteText: #a3a09dff;
+
+body{
+    background-color: $backgroundColor;
+}
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title{
+        color:#fff;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 46px;
+        letter-spacing: 9px;
+    }
+}
+.first-button{
+    background-color: $backgroundColor;
+    width: 100%;
+    border: none;
+    color:$yellowText;
+}
+.second-button{
+    background-color: $backgroundColor;
+    width: 100%;
+    border: none;
+    color:$yellowText;
+}
+
+
+.orange{
+    color: $yellowText;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    min-height: 60vh;
+    margin: 10%;
+}
+
+.first-box{
+    background-color: $cardColorOne;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.text{
+    padding: 10%;
+}
+
+.second-box{
+    background-color: $cardColorTwo;
+    
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.text-2{
+    padding: 10%;
+}
+
+.third-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $cardColorOne;
+    padding:10%;
+    font-size: 1.2rem;
+}
+
+.burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 75%;
+        height: 7px;
+        margin: 4px;
+        background-color: #fff;
+    }
+}
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+}
+
+.btn-sign {
+    width: 0;
+    height: 74px;
+    border-color: transparent transparent transparent #f2f2f2;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 65px;
+}
+
+@media screen and (max-width: 1000px) {
+    .boxes{
+        grid-template-columns: 100%;
+    }
+
+    .first-box{
+        margin-bottom: 5%;
+    }
+    .second-box{
+        margin-bottom: 5%;
+    }
+    .third-box{
+        margin-bottom: 5%;
+    }
+
+    header{
+        align-items: flex-start;
+    }
+
+    .title{
+        font-size: 8px;
+    }
+
+    
+}
